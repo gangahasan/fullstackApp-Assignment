@@ -16,8 +16,10 @@ form.addEventListener("submit", function (event) {
     .then((res) => res.json())
     .then((data) => {
       let user = data.filter((el, i) => {
+        console.log({ ue: el.email, email });
         el.email === email;
       });
+      console.log({ user });
 
       if (user.length > 0) {
         alert("User already exists");
