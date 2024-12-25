@@ -1,0 +1,39 @@
+#form{
+    margin:6rem auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap:20px;
+    color: green;
+    text-align: center;
+    width:30%;
+    background-color: whitesmoke;
+    border: 2px solid green;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease-in-out;
+    padding:30px 20px;
+}
+#form h3 {
+    font-size: 28px;
+}
+
+#form input{
+    padding:10px;
+    border:none;
+    border-radius:5px;
+    margin:0;
+    width:90%;
+    font-size:18px;
+}
+#submit {
+    padding:10px 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius:5px;
+    cursor:pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin-bottom: 30px;
+}
