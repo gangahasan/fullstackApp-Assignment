@@ -10,16 +10,13 @@ form.addEventListener("submit", function (event) {
   let mobile = form.mobile.value;
 
   let userobj = { username, email, password, mobile };
-  console.log("object", userobj);
 
   fetch(`${baseurl}/users`)
     .then((res) => res.json())
     .then((data) => {
       let user = data.filter((el, i) => {
-        console.log({ ue: el.email, email });
-        el.email === email;
+        return el.email === email;
       });
-      console.log({ user });
 
       if (user.length > 0) {
         alert("User already exists");
