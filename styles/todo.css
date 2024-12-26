@@ -1,0 +1,37 @@
+#user{
+    float: right;
+    margin: 0px 20px;
+}
+#username{
+    color: green;
+    font-size: 18px;
+}
+#logout {
+    margin: 0 auto;
+    display: block;
+    padding:10px 10px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius:5px;
+    cursor:pointer;
+    transition: background-color 0.3s ease-in-out;
+    font-size: 16px;
+}
+#form{
+    margin:6rem auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap:20px;
+    color: green;
+    text-align: center;
+    width:30%;
+    background-color: whitesmoke;
+    border: 2px solid green;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease-in-out;
+    padding:30px 20px;
+}

@@ -4,19 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/index.css">
-
+    <link rel="stylesheet" href="./styles/todo.css">
     <title>Todo page</title>
 </head>
 <body>
     <div id="navbar">
 
     </div>
+    <main id="todopage">
+       <div id="userdata">
+            <h4 id ="username"></h4>
+            <button id="logout">Logout</button>
+        </div>
+
+        <div id="">
+            <form id="form">
+                <h4>ADD TODO</h4>
+                <input id="idnumber" name="id" style="display: none;">
+                <label for="title">Enter Task title</label> 
+                <input id="title" type="text"name="tilte" placeholder="Enter task name">
+                <label for="deadline">Select Deadline</label>
+                <input id="deadline" type="date"name="deadline" />
+                <label for="priority">Select Priority</label>
+                <select id="priority" name="priority">
+                    <option value="Low">Low</option>
+                    <option value="Medium">Medium</option>
+                    <option value="High">High</option>
+                </select>
+                <input id="submit" type="submit" value="Add Todo"/>
+            </form>
+            <div id="todoContainer"></div>
+            
+        </div>
+    </main>
     <footer id="footer">
 
     </footer>
     
 </body>
 <script src="./scripts/navbar.js"></script>
-<script src ="./scripts/todo.js"></script>
+<script src ="./scripts/todo.js" type="module"></script>
 <script src="./scripts/footer.js"></script>
 </html>
